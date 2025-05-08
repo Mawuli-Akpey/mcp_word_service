@@ -17,15 +17,16 @@ A Python-based Microsoft Word document server powered by the MCP Python SDK. Thi
 
 ## Requirements
 
-- Python 3.8+
-- [MCP Python SDK](https://github.com/microsoft/mcp)
-- [python-docx](https://python-docx.readthedocs.io/en/latest/)
+- Python 3.10 or higher
+- pip
+- mcp (MCP Python SDK)
+- python-docx
 
 ## Installation
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/YOUR-USERNAME/mcp_word_service.git
+    git clone https://github.com/Mawuli-Akpey/mcp_word_service.git
     cd mcp_word_service
     ```
 2. (Recommended) Create a virtual environment:
@@ -69,12 +70,14 @@ print(result)
 
 ```
 mcp_word_service/
-│
-├── main.py                # MCP server and ability definitions
-├── README.md              # This file
-├── requirements.txt       # Python dependencies
-├── word-mcp-server-tool-priorities.md  # Ability roadmap and priorities
-└── ...
+├── .gitignore              # Git ignore file
+├── .python-version         # Python version file
+├── main.py                 # MCP server and ability definitions
+├── pyproject.toml          # Project metadata and dependencies
+├── README.md               # This file
+├── uv.lock                 # Lock file for project dependencies
+├── .venv/                  # Virtual environment directory
+└── __pycache__/            # Python bytecode cache
 ```
 
 ## Contributing
